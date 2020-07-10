@@ -28,13 +28,29 @@ void keyboard_post_init_user(void) {
 }
 
 void encoder_update_user(uint8_t index, bool clockwise) {
-  if (index == 0) {         // First encoder - top left
+  // First encoder
+  if (index == 0) {
     if (clockwise) {
       tap_code(KC_UP);
     } else {
       tap_code(KC_DOWN);
     }
-  } else if (index == 1) {  // Second encoder - top right
+  // Second encoder
+  } else if (index == 1) {
+    if (clockwise) {
+      tap_code(KC_LEFT);
+    } else {
+      tap_code(KC_RGHT);
+    }
+  // Third encoder
+  } else if (index == 2) {
+    if (clockwise) {
+      tap_code(KC_LEFT);
+    } else {
+      tap_code(KC_RGHT);
+    }
+  // Forth encoder
+  } else if (index == 3) {
     if (clockwise) {
       tap_code(KC_UP);
     } else {

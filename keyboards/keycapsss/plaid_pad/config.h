@@ -16,10 +16,10 @@
 
 #define MATRIX_ROW_PINS { C0, C1, C2, C3 }
 #define MATRIX_COL_PINS { B0, D7, D6, D5 }
-#define UNUSED_PINS     { B3, B4, B5, D4}
+// #define UNUSED_PINS     { }
 
-#define ENCODERS_PAD_A { D0, B1 }
-#define ENCODERS_PAD_B { D1, B2 }
+#define ENCODERS_PAD_A { D0, B1, B3, B5 }
+#define ENCODERS_PAD_B { D1, B2, B4, D4 }
 #define ENCODER_RESOLUTION 4
 
 /* COL2ROW, ROW2COL*/
