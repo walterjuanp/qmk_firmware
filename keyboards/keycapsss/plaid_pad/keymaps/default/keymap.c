@@ -31,30 +31,30 @@ void encoder_update_user(uint8_t index, bool clockwise) {
   // First encoder
   if (index == 0) {
     if (clockwise) {
-      tap_code(KC_UP);
-    } else {
       tap_code(KC_DOWN);
+    } else {
+      tap_code(KC_UP);
     }
   // Second encoder
   } else if (index == 1) {
     if (clockwise) {
-      tap_code(KC_LEFT);
-    } else {
       tap_code(KC_RGHT);
+    } else {
+      tap_code(KC_LEFT);
     }
   // Third encoder
   } else if (index == 2) {
     if (clockwise) {
-      tap_code(KC_LEFT);
-    } else {
       tap_code(KC_RGHT);
+    } else {
+      tap_code(KC_LEFT);
     }
   // Forth encoder
   } else if (index == 3) {
     if (clockwise) {
-      tap_code(KC_UP);
-    } else {
       tap_code(KC_DOWN);
+    } else {
+      tap_code(KC_UP);
     }
   }
 }
