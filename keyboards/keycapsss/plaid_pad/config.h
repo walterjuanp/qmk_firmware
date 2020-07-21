@@ -20,9 +20,9 @@
 
 #define ENCODERS_PAD_A { D1, B2 }
 #define ENCODERS_PAD_B { D0, B1 }
-
-
 #define ENCODER_RESOLUTION 4
+// uncomment the following line to flip the encoder directions
+// #define ENCODER_DIRECTION_FLIP
 
 /* COL2ROW, ROW2COL*/
 #define DIODE_DIRECTION COL2ROW
